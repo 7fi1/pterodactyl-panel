@@ -3,8 +3,16 @@ import { createGlobalStyle } from 'styled-components/macro';
 
 export default createGlobalStyle`
     body {
-        ${tw`font-sans bg-neutral-800 text-neutral-200`};
+        ${tw`font-sans text-neutral-200`};
         letter-spacing: 0.015em;
+        background-color: hsla(229, 70%, 9%, 1);
+        background-image:
+            radial-gradient(at 0% 100%, hsla(225, 84%, 4%, 1) 0px, transparent 50%),
+            radial-gradient(at 97% 97%, hsla(225, 84%, 4%, 1) 0px, transparent 50%),
+            radial-gradient(at 32% 1%, hsla(227, 70%, 10%, 1) 0px, transparent 50%),
+            radial-gradient(at 68% 5%, hsla(226, 78%, 5%, 1) 0px, transparent 50%),
+            radial-gradient(at 95% 42%, hsla(227, 70%, 10%, 1) 0px, transparent 50%);
+        min-height: 100vh;
     }
 
     h1, h2, h3, h4, h5, h6 {
